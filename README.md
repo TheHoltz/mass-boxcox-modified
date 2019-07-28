@@ -5,6 +5,8 @@ The motivation for this occurred because the people at my work usually searches 
 
 Use example:
 ```
+source("https://raw.githubusercontent.com/TheHoltz/mass-boxcox-modified/master/boxcox.R")
+
 modelo <- lm(iris$Sepal.Length~iris$Sepal.Width+iris$Petal.Length+iris$Petal.Width)
 
 ajuste <- boxcox(modelo)
